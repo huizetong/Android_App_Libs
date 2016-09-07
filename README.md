@@ -1,6 +1,6 @@
 # Android_App_Libs说明：
 * 1.app
-* 应用APP的module
+>* 应用APP的module
 
 * 2.app_base_code
 >* app依赖的基础jar包（抽取、封装的一些基础功能，纯代码）
