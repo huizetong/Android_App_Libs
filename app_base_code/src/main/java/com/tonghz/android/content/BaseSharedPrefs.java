@@ -50,7 +50,6 @@ public class BaseSharedPrefs {
             } else if (value instanceof String) {
                 editor.putString(key, (String) value);
             }
-
             editor.commit();
         }
     }

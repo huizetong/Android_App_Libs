@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- #########===== 常用宽高Style-开始 =====######### -->
+    <style name="style_match_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="style_match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_match_0">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="style_wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_wrap_match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="style_wrap_0">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="style_0_wrap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_0_match">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!-- #########===== 常用宽高Style-结束 =====######### -->
+
+
+    <!-- #########===== TextView 样式-开始 =====######### -->
+    <style name="TextView">
+        <item name="android:textColor">@color/def_text_color_black</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <style name="TextView.Match_Wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextView.Wrap_Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextView.SingleLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- #########===== TextView 样式-结束 =====######### -->
+
+
+    <!-- #########===== Button 样式-开始 =====######### -->
+    <style name="Button">
+        <!--<item name="android:background">@null</item>-->
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/def_text_color_black</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <style name="Button.Match_Wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Button.Wrap_Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- #########===== Button 样式-结束 =====######### -->
+
+
+    <!-- #########===== EditText 样式-结束 =====######### -->
+    <style name="EditText">
+        <item name="android:inputType">text</item>
+        <item name="android:maxEms">255</item>
+        <item name="android:maxLength">255</item>
+        <item name="android:textColor">@color/def_text_color_black</item>
+        <item name="android:textColorHint">@color/def_text_color_grey</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <style name="EditText.Match_Wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EditText.Wrap_Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EditText.SingleLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- #########===== EditText 样式-结束 =====######### -->
+
+
+    <!-- #########===== ImageView 样式-结束 =====######### -->
+    <style name="ImageView">
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="ImageView.Match_Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ImageView.Wrap_Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- #########===== ImageView 样式-结束 =====######### -->
+
+
+    <!--ImageButton 样式-->
+    <style name="ImageButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+
+    <!-- #########===== RadioButton 样式-开始 =====######### -->
+    <style name="RadioButton">
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">@dimen/drawablePadding_8</item>
+        <item name="android:textColor">@color/def_text_color_black</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <style name="RadioButton.Wrap_Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="RadioButton.Match_Wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- #########===== RadioButton 样式-结束 =====######### -->
+
+
+    <!-- #########===== View 样式-开始 =====######### -->
+    <style name="View_Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/line_color_gray</item>
+    </style>
+
+    <style name="View_Vertical">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/line_color_gray</item>
+    </style>
+    <!-- #########===== View 样式-结束 =====######### -->
+
+
+    <!--PullToRefreshListView样式-->
+    <style name="PullToRefreshListView_Style" parent="@style/style_match_match">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fastScrollEnabled">false</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:smoothScrollbar">true</item>
+    </style>
+
+    <style name="ListView_Style" parent="@style/style_match_match">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+
+    <style name="GridView_Style" parent="@style/style_match_match">
+        <item name="android:horizontalSpacing">@dimen/layout_margin_12</item>
+        <item name="android:numColumns">4</item>
+        <item name="android:verticalSpacing">@dimen/layout_margin_8</item>
+    </style>
+
+    <style name="ScrollView_Style" parent="@style/style_match_match">
+        <item name="android:scrollbars">none</item>
+    </style>
+    <!-- #########===== 表格样式-开始（TableLayout） =====######### -->
+
+
+    <!-- #########===== 表格样式-结束（TableLayout） =====######### -->
+    <style name="Table_TableLayout_Left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_12</item>
+    </style>
+
+    <style name="Table_TableLayout_Left.TextView">
+        <item name="android:textColor">@color/def_text_color_black</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <!-- #########===== 表格样式-开始（LinearLayout） =====######### -->
+    <style name="Table_LinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/table_height_default</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Table_LinearLayout_Left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_12</item>
+    </style>
+
+    <style name="Table_LinearLayout_Left.TextView">
+        <item name="android:textColor">@color/def_text_color_black</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <style name="Table_LinearLayout_Left.ImageView">
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="Table_LinearLayout_Right">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_12</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin_12</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Table_LinearLayout_Right.TextView">
+        <item name="android:textColor">@color/def_text_color_black</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <style name="Table_LinearLayout_Right.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:inputType">text</item>
+        <item name="android:maxEms">255</item>
+        <item name="android:maxLength">255</item>
+        <item name="android:textColor">@color/def_text_color_black</item>
+        <item name="android:textColorHint">@color/def_text_color_grey</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <style name="Table_LinearLayout_Right.Button">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/def_text_color_black</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <!-- #########===== 表格样式-结束（LinearLayout） =====######### -->
+
+    <!-- #########===== 表格样式-开始（RelativeLayout） =====######### -->
+    <style name="Table_RelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/table_height_default</item>
+    </style>
+
+    <style name="Table_RelativeLayout_Left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_12</item>
+    </style>
+
+    <style name="Table_RelativeLayout_Left.TextView">
+        <item name="android:textColor">@color/def_text_color_black</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <!--左侧-ImageView-->
+    <style name="Table_RelativeLayout_Left.ImageView">
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="Table_RelativeLayout_Right">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_8</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin_12</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <style name="Table_RelativeLayout_Right.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:inputType">text</item>
+        <item name="android:maxEms">255</item>
+        <item name="android:maxLength">255</item>
+        <item name="android:textColor">@color/def_text_color_black</item>
+        <item name="android:textColorHint">@color/def_text_color_grey</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <style name="Table_RelativeLayout_Right.Button">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/def_text_color_black</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <style name="Table_RelativeLayout_Line" parent="@style/View_Horizontal">
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <!-- #########===== 表格样式-结束（RelativeLayout） =====######### -->
+
+</resources>

@@ -15,6 +15,7 @@ import com.tonghz.android.utils.LogUtils;
  */
 public abstract class AbsBaseActivity extends AppCompatActivity implements OnViewListener, OnDataListener {
     protected AbsBaseActivity mActivity = this;
+
     /**
      * TAG标签
      */

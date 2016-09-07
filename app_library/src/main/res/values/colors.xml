@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--默认字体颜色-->
+    <color name="def_text_color_black">#333333</color>
+    <color name="def_text_color_grey">#999999</color>
+
+    <color name="line_color_gray">#E0E0E0</color>
+
+
+</resources>

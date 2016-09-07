@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--layout_margin-->
+    <dimen name="layout_margin_4">4dp</dimen>
+    <dimen name="layout_margin_5">5dp</dimen>
+    <dimen name="layout_margin_8">8dp</dimen>
+    <dimen name="layout_margin_12">12dp</dimen>
+    <dimen name="layout_margin_16">16dp</dimen>
+    <dimen name="layout_margin_24">24dp</dimen>
+    <dimen name="layout_margin_32">32dp</dimen>
+    <dimen name="layout_margin_40">40dp</dimen>
+    <dimen name="layout_margin_48">48dp</dimen>
+
+    <!--padding-->
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_24">24dp</dimen>
+    <dimen name="padding_32">32dp</dimen>
+    <dimen name="padding_40">40dp</dimen>
+    <dimen name="padding_48">48dp</dimen>
+
+    <!--drawablePadding-->
+    <dimen name="drawablePadding_5">5dp</dimen>
+    <dimen name="drawablePadding_8">8dp</dimen>
+    <dimen name="drawablePadding_16">16dp</dimen>
+
+    <!--textSize-->
+    <dimen name="textSize_12">12sp</dimen>
+    <dimen name="textSize_14">14sp</dimen>
+    <dimen name="textSize_18">18sp</dimen>
+    <dimen name="textSize_22">22sp</dimen>
+
+    <!--Table默认高度-->
+    <dimen name="table_height_default">48dp</dimen>
+
+    <!--标题栏高度-->
+    <dimen name="title_bar_height">56dp</dimen>
+
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+</resources>

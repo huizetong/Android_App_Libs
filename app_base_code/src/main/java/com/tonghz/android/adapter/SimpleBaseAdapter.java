@@ -14,6 +14,7 @@ import java.util.List;
  * Created by TongHuiZe on 2016/3/30.
  */
 public abstract class SimpleBaseAdapter<E> extends BaseAdapter {
+
     /**
      * LayoutInflater对象
      */

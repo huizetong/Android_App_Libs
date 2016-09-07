@@ -46,7 +46,7 @@ public class JsonUtils {
             Gson gson = new Gson();
             result = gson.fromJson(jsonStr, classOfT);
         } catch (Exception e) {
-            LogUtils.e(JsonUtils.class, "JSON解析异常！！！");
+            LogUtils.e(JsonUtils.class, "GSON解析异常！！！");
             e.printStackTrace();
         }
         return result;
@@ -66,7 +66,7 @@ public class JsonUtils {
             Gson gson = new Gson();
             result = gson.fromJson(jsonStr, typeOfT);
         } catch (Exception e) {
-            LogUtils.e(JsonUtils.class, "JSON解析异常！！！");
+            LogUtils.e(JsonUtils.class, "GSON解析异常！！！");
             e.printStackTrace();
         }
         return result;

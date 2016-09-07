@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_match_wrap"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="40dp"
+    android:paddingLeft="@dimen/layout_margin_16"
+    android:paddingRight="@dimen/layout_margin_16"
+    android:paddingTop="@dimen/padding_32">
+
+    <Button
+        android:id="@+id/btn_camera"
+        style="@style/Button.Match_Wrap"
+        android:text="@string/image_camera" />
+
+    <Button
+        android:id="@+id/btn_gallery"
+        style="@style/Button.Match_Wrap"
+        android:layout_marginTop="@dimen/layout_margin_16"
+        android:text="@string/image_gallery" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/Button.Match_Wrap"
+        android:layout_marginTop="40dp"
+        android:text="@string/image_cancel" />
+
+</LinearLayout>

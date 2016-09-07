@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_match_wrap"
+    android:gravity="center_vertical" >
+
+    <EditText
+        android:id="@+id/et_content"
+        style="@style/EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/layout_margin_8"
+        android:layout_marginRight="@dimen/layout_margin_8"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="text" />
+
+    <ImageButton
+        android:id="@+id/ibtn_clear"
+        style="@style/ImageButton"
+        android:contentDescription="@null"
+        android:src="@drawable/delete_ic" />
+
+</LinearLayout>

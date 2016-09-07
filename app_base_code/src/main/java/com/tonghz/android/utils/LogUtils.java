@@ -1,6 +1,5 @@
 package com.tonghz.android.utils;
 
-import android.content.Context;
 import android.util.Log;
 
 /**
@@ -13,7 +12,9 @@ public class LogUtils {
      */
     public static boolean isDebuggable = true;
 
-    /** #########===== verbose =====######### */
+    /**
+     * #########===== verbose =====#########
+     */
     public static void v(String tag, String msg) {
         if (isDebuggable) {
             Log.v(tag, "--------->>>>>" + msg);
@@ -30,7 +31,9 @@ public class LogUtils {
         v(cls.getSimpleName(), msg);
     }
 
-    /** #########===== debug =====######### */
+    /**
+     * #########===== debug =====#########
+     */
     public static void d(String tag, String msg) {
         if (isDebuggable) {
             Log.d(tag, "--------->>>>>" + msg);
@@ -41,7 +44,9 @@ public class LogUtils {
         d(cls.getSimpleName(), msg);
     }
 
-    /** #########===== info =====######### */
+    /**
+     * #########===== info =====#########
+     */
     public static void i(String tag, String msg) {
         if (isDebuggable) {
             Log.i(tag, "--------->>>>>" + msg);
@@ -52,7 +57,9 @@ public class LogUtils {
         i(cls.getSimpleName(), msg);
     }
 
-    /** #########===== warn =====######### */
+    /**
+     * #########===== warn =====#########
+     */
     public static void w(String tag, String msg) {
         if (isDebuggable) {
             Log.w(tag, "--------->>>>>" + msg);
@@ -63,7 +70,9 @@ public class LogUtils {
         w(cls.getSimpleName(), msg);
     }
 
-    /** #########===== error =====######### */
+    /**
+     * #########===== error =====#########
+     */
     public static void e(String tag, String msg) {
         if (isDebuggable) {
             Log.e(tag, "--------->>>>>" + msg);
