@@ -3,7 +3,7 @@
 >* 应用APP的module
 
 * 2.app_base_code
->* app依赖的基础jar包（抽取、封装的一些基础功能，纯代码）
+>* app依赖的基础jar包（封装的一些基础功能，纯代码）
 >* 网络框架：NoHttp(1.0.6版本)
 >* 图片加载缓存库：universal-image-loader-1.9.5
 >* Json解析库：gson-2.7
