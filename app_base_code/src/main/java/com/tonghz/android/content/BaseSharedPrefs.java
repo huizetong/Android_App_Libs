@@ -87,7 +87,7 @@ public class BaseSharedPrefs {
     }
 
     /**
-     * 添加数据实体
+     * 添加数据实体（混淆会无法使用）
      *
      * @param sharedPrefs SharedPreferences对象
      * @param t           数据实体
@@ -121,7 +121,7 @@ public class BaseSharedPrefs {
     }
 
     /**
-     * 获取数据实体
+     * 获取数据实体（混淆会无法使用）
      *
      * @param sharedPrefs SharedPreferences对象
      * @param key         键

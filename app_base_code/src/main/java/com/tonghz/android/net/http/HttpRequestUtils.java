@@ -91,10 +91,10 @@ public class HttpRequestUtils {
      * @param isCancel  是否取消进度条
      * @param <T>       泛型类型
      */
-    public <T> void add(Context context, int what, Request<T> request,
-                        OnHttpResponseListener<T> listener, boolean isShowing, boolean isCancel) {
-        mRequestQueue.add(what, request,
-                new HttpResponseListener<>(context, request, listener, isShowing, isCancel));
+    public <T> void add(Context context, int what, Request<T> request, OnHttpResponseListener<T> listener,
+                        boolean isShowing, boolean isCancel) {
+        mRequestQueue.add(what, request, new HttpResponseListener<>(context, request,
+                listener, isShowing, isCancel));
     }
 
     /**
@@ -127,8 +127,8 @@ public class HttpRequestUtils {
      */
     public <T> void add(Activity context, int what, Request<T> request, OnHttpResponseListener<T> listener,
                         boolean isShowing, CharSequence message, boolean isCancel) {
-        mRequestQueue.add(what, request, new HttpResponseListener<>(context, request,
-                listener, isShowing, message, isCancel));
+        mRequestQueue.add(what, request, new HttpResponseListener<>(context, request, listener,
+                isShowing, message, isCancel));
     }
 
     /**

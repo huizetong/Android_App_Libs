@@ -21,12 +21,6 @@ public class LogUtils {
         }
     }
 
-//    public static void v(Context context, String msg) {
-//        if (context != null) {
-//            v(context.getClass().getSimpleName(), msg);
-//        }
-//    }
-
     public static void v(Class<?> cls, String msg) {
         v(cls.getSimpleName(), msg);
     }

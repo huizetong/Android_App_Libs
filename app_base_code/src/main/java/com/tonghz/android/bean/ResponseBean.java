@@ -41,7 +41,6 @@ public class ResponseBean<T> {
             result = gson.fromJson(gson.toJson(map), typeOfT);
         }
         return result;
-
     }
 
     public boolean isSuccess() {
@@ -68,16 +67,16 @@ public class ResponseBean<T> {
         return objcount;
     }
 
-    public void setObjCount(String objcount) {
-        this.objcount = objcount;
+    public void setObjCount(String objCount) {
+        this.objcount = objCount;
     }
 
     public List<T> getObjList() {
         return objlist;
     }
 
-    public void setObjList(List<T> objlist) {
-        this.objlist = objlist;
+    public void setObjList(List<T> objList) {
+        this.objlist = objList;
     }
 
     public String getStatus() {

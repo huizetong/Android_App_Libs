@@ -143,14 +143,14 @@ public class FileUtils {
         byte[] byteArray = null;
         ByteArrayOutputStream baos = null;
         File file = new File(filePath);
-        /**
+        /*
          * 判断外部存储是否可用
          */
         if (!SDCardUtils.isSDCardAvailable()) {
             return null;
         }
 
-        /**
+        /*
          * 判断文件是否存在
          */
         if (!file.exists()) {
@@ -196,7 +196,7 @@ public class FileUtils {
      */
     public static File createFileStorageDir(Context context, String fileType) {
         File fileStorageDir = null;
-        /**
+        /*
          * 判断外部存储设备是否可用
          */
         if (!SDCardUtils.isSDCardAvailable()) {
@@ -279,6 +279,16 @@ public class FileUtils {
         }
 
         return mediaFile;
+    }
+
+    public static File getRootPath() {
+        File rootPath;
+        if (SDCardUtils.isSDCardAvailable()) {
+            rootPath = Environment.getExternalStorageDirectory(); // 取得sdcard文件路径
+        } else {
+            rootPath = Environment.getDataDirectory();
+        }
+        return rootPath;
     }
 
 }

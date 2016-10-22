@@ -47,5 +47,4 @@ public class ViewUtils {
         listView.setLayoutParams(params);
     }
 
-
 }

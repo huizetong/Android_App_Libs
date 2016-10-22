@@ -5,7 +5,8 @@ package com.tonghz.android.interfaces;
  * Created by TongHuiZe on 2016/8/13.
  */
 public interface OnDataListener {
-    void initDataAsync();
-
-    void initDataSync();
+    /**
+     * 设置数据内容
+     */
+    void setContentData();
 }

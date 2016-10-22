@@ -59,18 +59,12 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="TextView.SingleLine">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:singleLine">true</item>
-    </style>
     <!-- #########===== TextView 样式-结束 =====######### -->
 
 
     <!-- #########===== Button 样式-开始 =====######### -->
     <style name="Button">
         <!--<item name="android:background">@null</item>-->
-        <item name="android:singleLine">true</item>
         <item name="android:textColor">@color/def_text_color_black</item>
         <item name="android:textSize">@dimen/textSize_14</item>
     </style>
@@ -89,7 +83,7 @@
 
     <!-- #########===== EditText 样式-结束 =====######### -->
     <style name="EditText">
-        <item name="android:inputType">text</item>
+        <item name="android:inputType">textMultiLine</item>
         <item name="android:maxEms">255</item>
         <item name="android:maxLength">255</item>
         <item name="android:textColor">@color/def_text_color_black</item>
@@ -107,11 +101,6 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="EditText.SingleLine">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:singleLine">true</item>
-    </style>
     <!-- #########===== EditText 样式-结束 =====######### -->
 
 
@@ -201,110 +190,64 @@
     <style name="ScrollView_Style" parent="@style/style_match_match">
         <item name="android:scrollbars">none</item>
     </style>
-    <!-- #########===== 表格样式-开始（TableLayout） =====######### -->
 
-
-    <!-- #########===== 表格样式-结束（TableLayout） =====######### -->
-    <style name="Table_TableLayout_Left">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">@dimen/layout_margin_12</item>
-    </style>
-
-    <style name="Table_TableLayout_Left.TextView">
-        <item name="android:textColor">@color/def_text_color_black</item>
-        <item name="android:textSize">@dimen/textSize_14</item>
-    </style>
-
-    <!-- #########===== 表格样式-开始（LinearLayout） =====######### -->
-    <style name="Table_LinearLayout">
+    <!-- #########===== 表格样式-开始 =====######### -->
+    <style name="TableRaw">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/table_height_default</item>
+    </style>
+
+    <style name="TableRaw.LinearLayout">
         <item name="android:gravity">center_vertical</item>
     </style>
 
-    <style name="Table_LinearLayout_Left">
+    <!--左侧-->
+    <style name="TableRaw_Left">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">@dimen/layout_margin_12</item>
     </style>
 
-    <style name="Table_LinearLayout_Left.TextView">
+    <style name="TableRaw_Left_TextView" parent="@style/TableRaw_Left">
         <item name="android:textColor">@color/def_text_color_black</item>
         <item name="android:textSize">@dimen/textSize_14</item>
     </style>
 
-    <style name="Table_LinearLayout_Left.ImageView">
-        <item name="android:scaleType">fitXY</item>
-    </style>
-
-    <style name="Table_LinearLayout_Right">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_marginLeft">@dimen/layout_margin_12</item>
-        <item name="android:layout_marginRight">@dimen/layout_margin_12</item>
-        <item name="android:gravity">start|center_vertical</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:singleLine">true</item>
-    </style>
-
-    <style name="Table_LinearLayout_Right.TextView">
-        <item name="android:textColor">@color/def_text_color_black</item>
-        <item name="android:textSize">@dimen/textSize_14</item>
-    </style>
-
-    <style name="Table_LinearLayout_Right.EditText">
-        <item name="android:background">@null</item>
-        <item name="android:inputType">text</item>
-        <item name="android:maxEms">255</item>
-        <item name="android:maxLength">255</item>
-        <item name="android:textColor">@color/def_text_color_black</item>
-        <item name="android:textColorHint">@color/def_text_color_grey</item>
-        <item name="android:textSize">@dimen/textSize_14</item>
-    </style>
-
-    <style name="Table_LinearLayout_Right.Button">
-        <item name="android:background">@null</item>
-        <item name="android:textColor">@color/def_text_color_black</item>
-        <item name="android:textSize">@dimen/textSize_14</item>
-    </style>
-
-    <!-- #########===== 表格样式-结束（LinearLayout） =====######### -->
-
-    <!-- #########===== 表格样式-开始（RelativeLayout） =====######### -->
-    <style name="Table_RelativeLayout">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/table_height_default</item>
-    </style>
-
-    <style name="Table_RelativeLayout_Left">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="TableRaw_Left_TextView.RelativeLayout">
         <item name="android:layout_centerVertical">true</item>
-        <item name="android:layout_marginLeft">@dimen/layout_margin_12</item>
     </style>
 
-    <style name="Table_RelativeLayout_Left.TextView">
+    <style name="TableRaw_Left_ImageView" parent="@style/TableRaw_Left">
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="TableRaw_Left_ImageView.RelativeLayout">
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--右侧（TableRow需指定高度）-->
+    <style name="TableRaw_Right">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_12</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin_12</item>
+        <item name="android:gravity">start|center_vertical</item>
+    </style>
+
+    <style name="TableRaw_Right.Weight">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="TableRaw_Right_TextView" parent="@style/TableRaw_Right">
         <item name="android:textColor">@color/def_text_color_black</item>
         <item name="android:textSize">@dimen/textSize_14</item>
     </style>
 
-    <!--左侧-ImageView-->
-    <style name="Table_RelativeLayout_Left.ImageView">
-        <item name="android:scaleType">fitXY</item>
+    <style name="TableRaw_Right_TextView.Weight">
+        <item name="android:layout_weight">1</item>
     </style>
 
-    <style name="Table_RelativeLayout_Right">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_marginLeft">@dimen/layout_margin_8</item>
-        <item name="android:layout_marginRight">@dimen/layout_margin_12</item>
-        <item name="android:background">@null</item>
-        <item name="android:gravity">start|center_vertical</item>
-        <item name="android:textSize">@dimen/textSize_14</item>
-    </style>
-
-    <style name="Table_RelativeLayout_Right.EditText">
+    <style name="TableRaw_Right_EditText" parent="@style/TableRaw_Right">
         <item name="android:background">@null</item>
         <item name="android:inputType">text</item>
         <item name="android:maxEms">255</item>
@@ -314,15 +257,23 @@
         <item name="android:textSize">@dimen/textSize_14</item>
     </style>
 
-    <style name="Table_RelativeLayout_Right.Button">
+    <style name="TableRaw_Right_EditText.Weight">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="TableRaw_Right_Button" parent="@style/TableRaw_Right">
         <item name="android:background">@null</item>
+        <item name="android:drawablePadding">@dimen/drawablePadding_8</item>
+        <item name="android:drawableRight">@drawable/com_clickable</item>
+        <item name="android:gravity">center_vertical|end</item>
         <item name="android:textColor">@color/def_text_color_black</item>
+        <item name="android:textColorHint">@color/def_text_color_grey</item>
         <item name="android:textSize">@dimen/textSize_14</item>
     </style>
 
-    <style name="Table_RelativeLayout_Line" parent="@style/View_Horizontal">
+    <style name="TableRaw_Line" parent="@style/View_Horizontal">
         <item name="android:layout_alignParentBottom">true</item>
     </style>
-    <!-- #########===== 表格样式-结束（RelativeLayout） =====######### -->
 
+    <!-- #########===== 表格样式-结束 =====######### -->
 </resources>

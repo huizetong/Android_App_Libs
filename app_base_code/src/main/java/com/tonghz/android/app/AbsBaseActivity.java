@@ -2,8 +2,10 @@ package com.tonghz.android.app;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.tonghz.android.interfaces.OnDataListener;
 import com.tonghz.android.interfaces.OnViewListener;
@@ -28,10 +30,11 @@ public abstract class AbsBaseActivity extends AppCompatActivity implements OnVie
 
         onCreateActivity(savedInstanceState);
 
-        findViews();
-        initDataSync();
-        initDataAsync();
-        setListeners();
+        // 初始化View（绑定控件，设置监听）
+        initViews();
+
+        // 设置数据内容
+        setContentData();
     }
 
     @Override
@@ -77,23 +80,25 @@ public abstract class AbsBaseActivity extends AppCompatActivity implements OnVie
      */
     protected abstract void onCreateActivity(Bundle savedInstanceState);
 
+    /**
+     * 获取View
+     *
+     * @param id  控件Id
+     * @param <T> 泛型类型
+     * @return View子类
+     */
+    @SuppressWarnings("unchecked")
+    protected <T extends View> T findView(@IdRes int id) {
+        return (T) this.findViewById(id);
+    }
+
     @Override
-    public void findViews() {
+    public void initViews() {
 
     }
 
     @Override
-    public void setListeners() {
-
-    }
-
-    @Override
-    public void initDataAsync() {
-
-    }
-
-    @Override
-    public void initDataSync() {
+    public void setContentData() {
 
     }
 

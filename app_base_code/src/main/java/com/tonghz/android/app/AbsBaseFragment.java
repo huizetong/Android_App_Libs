@@ -3,6 +3,7 @@ package com.tonghz.android.app;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -56,8 +57,6 @@ public abstract class AbsBaseFragment extends Fragment implements OnViewListener
         if (this.mLayoutResId != 0 && mRootView == null) {
             mRootView = inflater.inflate(this.mLayoutResId, container, false);
         }
-        // 根据Id绑定控件
-        findViews();
         return mRootView;
     }
 
@@ -66,9 +65,11 @@ public abstract class AbsBaseFragment extends Fragment implements OnViewListener
         super.onActivityCreated(savedInstanceState);
         LogUtils.i(TAG, "Fragment onActivityCreated() is execute!");
 
-        initDataSync();
-        initDataAsync();
-        setListeners();
+        // 初始化View（绑定控件，设置监听）
+        initViews();
+
+        // 设置数据内容
+        setContentData();
     }
 
     @Override
@@ -116,6 +117,20 @@ public abstract class AbsBaseFragment extends Fragment implements OnViewListener
     protected abstract void onCreateFragment(Bundle savedInstanceState);
 
     /**
+     * 获取View
+     *
+     * @param id  控件Id
+     * @param <T> 泛型类型
+     * @return View子类
+     */
+    @SuppressWarnings("unchecked")
+    protected <T extends View> T findView(@IdRes int id) {
+        if (mRootView == null)
+            return null;
+        return (T) mRootView.findViewById(id);
+    }
+
+    /**
      * 设置视图内容
      *
      * @param layoutResId 布局资源Id
@@ -136,22 +151,12 @@ public abstract class AbsBaseFragment extends Fragment implements OnViewListener
     }
 
     @Override
-    public void initDataAsync() {
+    public void initViews() {
 
     }
 
     @Override
-    public void initDataSync() {
-
-    }
-
-    @Override
-    public void findViews() {
-
-    }
-
-    @Override
-    public void setListeners() {
+    public void setContentData() {
 
     }
 

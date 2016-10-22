@@ -19,10 +19,7 @@ public class StringUtils {
      * @return 是否为空
      */
     public static boolean isEmpty(CharSequence str) {
-        if (str == null || str.length() == 0 || TextUtils.equals("null", str))
-            return true;
-        else
-            return false;
+        return str == null || str.length() == 0 || TextUtils.equals("null", str);
     }
 
     /**
@@ -101,33 +98,6 @@ public class StringUtils {
         Pattern pattern = Pattern.compile("^[0-9]*[1-9][0-9]*$");
         Matcher isNum = pattern.matcher(str);
         return isNum.matches();
-    }
-
-    /**
-     * 获取字符串的长度
-     *
-     * @param str 字符串
-     * @return 字符串长度
-     */
-    public static int getStrLength(String str) {
-        int strLength = 0;
-        String chinese = "[\u0391-\uFFE5]";
-        if (!isEmpty(str)) {
-            // 获取字段值的长度，如果含中文字符，则每个中文字符长度为2，否则为1
-            for (int i = 0; i < str.length(); i++) {
-                // 获取一个字符
-                String temp = str.substring(i, i + 1);
-                // 判断是否为中文字符
-                if (temp.matches(chinese)) {
-                    // 中文字符长度为2
-                    strLength += 2;
-                } else {
-                    // 其他字符长度为1
-                    strLength += 1;
-                }
-            }
-        }
-        return strLength;
     }
 
     /**

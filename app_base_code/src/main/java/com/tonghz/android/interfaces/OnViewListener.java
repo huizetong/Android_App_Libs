@@ -5,7 +5,8 @@ package com.tonghz.android.interfaces;
  * Created by TongHuiZe on 2016/8/13.
  */
 public interface OnViewListener {
-    void findViews();
-
-    void setListeners();
+    /**
+     * 初始化View（绑定控件，设置监听）
+     */
+    void initViews();
 }

@@ -1,6 +1,7 @@
 package com.tonghz.app.util;
 
 import android.content.Context;
+import android.text.TextUtils;
 
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
@@ -157,7 +158,7 @@ public class LocationUtil {
      *
      * @param location BDLocation对象
      */
-    public void showLocationMsg(BDLocation location) {
+    private void showLocationMsg(BDLocation location) {
         if (null != location && location.getLocType() != BDLocation.TypeServerError) {
             StringBuilder sb = new StringBuilder(256);
             sb.append("time : ");
@@ -236,7 +237,7 @@ public class LocationUtil {
         return city;
     }
 
-    public static void setCity(String city) {
+    private static void setCity(String city) {
         LocationUtil.city = city;
     }
 
@@ -257,10 +258,10 @@ public class LocationUtil {
     }
 
     public static String getCityCode() {
-        return cityCode;
+        return TextUtils.isEmpty(cityCode) ? "315" : cityCode;
     }
 
-    public static void setCityCode(String cityCode) {
+    private static void setCityCode(String cityCode) {
         LocationUtil.cityCode = cityCode;
     }
 }

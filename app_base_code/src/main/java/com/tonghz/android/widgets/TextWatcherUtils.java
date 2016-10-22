@@ -66,7 +66,7 @@ public class TextWatcherUtils implements TextWatcher {
     @Override
     public void afterTextChanged(Editable s) {
         if (s != null && s.length() > 0) {
-            /**
+            /*
              * 按钮可用或显示
              */
             targetView.setClickable(true);
@@ -76,7 +76,7 @@ public class TextWatcherUtils implements TextWatcher {
                 targetView.setVisibility(View.VISIBLE);
             }
         } else {
-            /**
+            /*
              * 按钮不可用或隐藏
              */
             targetView.setClickable(false);
